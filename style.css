@@ -1,0 +1,44 @@
+html {
+  font-size: 15px;
+}
+input {
+  background-color: white;
+  transition-duration: 400ms;
+}
+td {
+  background-color: white;
+  transition-duration: 400ms;
+}
+td.endpoint {
+  font-weight: 900;
+}
+td:nth-child(2) {
+  background-color: grey;
+}
+td:hover {
+  transform: scale(1.1);
+  transition-duration: parent;
+}
+td:active {
+  background-color: blue;
+  transition-duration: parent;
+}
+input:hover {
+  background-color: violet;
+  transition-duration: parent;
+}
+#todo {
+  list-style-type: none;
+}
+.zavrseno {
+  width: max-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: red;
+  color: white;
+  transition-duration: parent;
+}
+#todo li {
+  width: max-content;
+  transition-duration: 400ms;
+}

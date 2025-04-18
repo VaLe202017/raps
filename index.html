@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raps doc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <td class="endpoint">Endpoint</td>
+          <td>Metoda</td>
+          <td>Opis</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">/users</td>
+          <td style="height: 2rem">GET</td>
+          <td style="height: 2rem">Dohvaća listu svih korisnika</td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>Kreira novog korisnika</td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td>Briše određenog korisnika</td>
+        </tr>
+        <tr>
+          <td>/products</td>
+          <td>GET</td>
+          <td>Dohvaća listu svih proizvoda</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>/orders</td>
+          <td colspan="2">
+            <ul>
+              <li>Pregled svih narudžbi</li>
+              <li>Dodaj novu narudžbu</li>
+              <li>Ažuriraj postojeću narudžbu</li>
+            </ul>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <form action="">
+      <label for="ime">Ime:</label> <br />
+      <input type="text" id="ime" required />
+      <p>Prezime: <br /><input type="text" id="prezime" required /></p>
+      <p>Email: <br /><input type="email" required /></p>
+      <p>Lozinka: <br /><input type="password" required /></p>
+      <p>Potvrdi lozinku: <br /><input type="password" required /></p>
+      <input type="submit" value="Registriraj se" />
+    </form>
+    <br />
+    <button id="gumb">Prikaži vrijeme:</button>
+    <p id="vrijeme"></p>
+    <p id="tekst">Lorem ipsum</p>
+    <button id="vece">+</button>
+    <p id="lorem">Lorem ipsum</p>
+    <button id="promj">Promijeni tekst</button>
+
+    <p>TO-DO lista</p>
+    <input type="text" id="unos" />
+    <ul id="todo" style="border: 3px"></ul>
+    <button id="clear">Ukloni sve</button>
+
+    <div class="">
+      <label for="username">Korisničko ime:</label>
+      <input type="text" id="username" />
+    </div>
+
+    <div class="">
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" />
+    </div>
+
+    <button id="loginButton">Prijavi se</button>
+
+    <div class="message" id="message"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
